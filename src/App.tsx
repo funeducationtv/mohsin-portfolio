@@ -5,8 +5,11 @@
 
 import Navbar from './components/layout/Navbar';
 import Hero from './components/sections/Hero';
+import About from './components/sections/About';
 import Projects from './components/sections/Projects';
 import Services from './components/sections/Services';
+import Contact from './components/sections/Contact';
+import Footer from './components/layout/Footer';
 
 export default function App() {
   return (
@@ -15,25 +18,13 @@ export default function App() {
       
       <main>
         <Hero />
-        
-        <section id="about" className="min-h-screen flex items-center justify-center bg-white dark:bg-gray-900">
-          <div className="text-center">
-            <h2 className="text-3xl font-bold mb-4">About Section</h2>
-            <p className="text-gray-500 dark:text-gray-400">Waiting for next instructions...</p>
-          </div>
-        </section>
-        
+        <About />
         <Projects />
-        
         <Services />
-        
-        <section id="contact" className="min-h-screen flex items-center justify-center">
-          <div className="text-center">
-            <h2 className="text-3xl font-bold mb-4">Contact Section</h2>
-            <p className="text-gray-500 dark:text-gray-400">Waiting for next instructions...</p>
-          </div>
-        </section>
+        <Contact />
       </main>
+
+      <Footer />
     </div>
   );
 }
